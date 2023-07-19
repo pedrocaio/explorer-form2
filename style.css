@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    background: #BFD7E4;
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 465px;
+    background: #293241;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header h1 {
+    font-family: 'Staatliches', cursive;
+    font-size: 36px;
+    height: 45px;
+    color: white;
+    margin-top: 107px;
+}
+
+header p {
+    font-size: 16px;
+    color: white;
+    height: 46px;
+}
+
+form {
+    width: 750px;
+    margin: 28px auto 0;
+    border-radius: 20px 20px 20px 20px;
+    background: white;
+}
+
+fieldset {
+    border: 0;
+    padding: 0px 64px;
+    margin-bottom: 31px;
+}
+
+.form-header {
+    width: 750px;
+    height: 133px;
+    border-radius: 20px 20px 0px 0px;
+    background: #F67669;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-header legend {
+    font-family: 'Staatliches', cursive;
+    color: white;
+    font-size: 24px;
+    line-height: 34px;
+
+
+
+    margin-top: -0px;
+
+
+
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 31px;
+}
+
+.input-wrapper label, .checkbox label {
+    color: #4E4958;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: start;
+}
+
+.input-wrapper input, .input-wrapper select {
+    width: 300px;
+    height: 55px;
+    padding: 0 24px;
+    background: #FAFAFC;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+}
+
+.input-wrapper span {
+    color: #C1BCCC;
+    font-size: 12px;
+    line-height: 20px;
+    margin-left: 9px;
+}
+
+.input-wrapper span:hover {
+    color: rgb(115 113 120);
+}
+
+.name-form {
+    display: flex;
+    justify-content: center;
+    gap: 22px;
+}
+
+#email-input {
+    width: 100%;
+}
+
+fieldset legend {
+    width: 622px;
+    font-family: 'Staatliches', cursive;
+    color: #253B51;
+    font-size: 24px;
+    line-height: 34px;
+}
+
+.line {
+    margin-top: 8px;
+    border-bottom: 1px solid #E6E6F0;
+}
+
+.input-wrapper select {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -ms-progress-appearance: none;
+    -moz-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1_54)'%3E%3Cpath d='M8 10L12 14L16 10' stroke='%239C98A6' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1_54'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: right 5px top 50%;
+}
+
+.input-wrapper textarea {
+    width: 608px;
+    height: 166px;
+    padding: 24px;
+    border-radius: 8px;
+    border: 1px solid #E6E6F0;
+    background: #FAFAFC;
+}
+
+.checkbox {
+    margin-top: 31px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox input {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    opacity: 0;
+}
+
+.checkbox label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.checkbox label::before {
+    content: '';
+    width: 24px;
+    height: 24px;
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+    background: #FAFAFC;
+}
+
+.checkbox input:checked + label::before {
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_1802_14)'%3E%3Cpath d='M9 16.17L4.83 12L3.41 13.41L9 19L21 7L19.59 5.59L9 16.17Z' fill='%2342D3FF'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_1802_14'%3E%3Crect width='24' height='24' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E");
+}
+
+.checkbox input:focus + label::before {
+    outline: 2px solid black;
+}
+
+.date-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 31px;
+}
+
+#date {
+    margin-right: 20px;
+}
+
+#time-time-end, #time-time-begin {
+    width: 140px;
+    height: 55px;
+}
+
+#button {
+    width: 622px;
+    height: 51px;
+    padding: 15px 40px;
+    border-radius: 8px;
+    background: #F67669;
+    font-family: 'Staatliches', cursive;
+    color: white;
+    font-size: 20px;
+    border: none;
+    margin-bottom: 62px;
+}
+
+#button:hover {
+    background: #d16053;
+    transition: .5s;
+}
+
+input:invalid {
+    border: 1px solid #FF1010;
+}

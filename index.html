@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 1 - Stage 3</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Staatliches&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Avalie a sua mentoria</h1>
+        <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+        <img src="./chat.svg" alt="Um chat vermelho com 5 estrelas na horizontal, sendo a do meio e as duas da esquerda da cor branca e as duas da direta vermelho escuro, trazendo a ideia de uma pesquisa de satisfação.">
+    </header>
+    <form>
+        <div class="form-header">
+            <legend>Informações pessoais</legend>
+        </div>
+        <fieldset>
+                <div class="name-form">
+                    <div class="input-wrapper">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" required minlength="10">
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="last-name">Sobrenome</label>
+                        <input type="text" id="last-name" required>
+                    </div>
+                </div>
+                <div class="input-wrapper">
+                    <label for="email-input">Email<span>(digite um email válido)</span></label>
+                    <input type="email" id="email-input">
+                </div>
+        </fieldset>
+        <fieldset>
+            <legend>Informações do mentor</legend>
+            <div class="line"></div>
+            <div class="input-wrapper">
+                <label for="select">Selecione quem foi o seu mentor</label>
+                <select id="select">
+                    <option selected hidden id="default"></option>
+                    <option value="pedro">Pedro</option>
+                    <option value="joao">João</option>
+                    <option value="caio">Caio</option>
+                </select>
+            </div>
+            <div class="input-wrapper">
+                <label for="feedback">Feedback sobre o mentor</label>
+                <textarea id="feedback"></textarea>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox" id="checkbox">
+                <label for="checkbox">Todas as minhas dúvidas foram esclarecidas durante a mentoria</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Agendando próxima mentoria</legend>
+            <div class="line"></div>
+            <div class="date-form">
+                <div class="input-wrapper">
+                    <label for="date">Data<span>(DD/MM/AAAA)</span></label>
+                    <input type="date" id="date">
+                </div>
+                <div class="input-wrapper">
+                    <label for="time-time-begin">Das</span></label>
+                    <input type="time" id="time-time-begin">
+                </div>
+                <div class="input-wrapper">
+                    <label for="time-time-end">Até</span></label>
+                    <input type="time" id="time-time-end">
+                </div>
+            </div>
+        </fieldset>
+        <input type="submit" value="Salvar" id="button">
+    </form>
+</body>
+</html>
